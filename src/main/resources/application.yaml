@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/todo
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    username: rehimovcompany@gmail.com
+    password: cjtttmnjtvmipapq
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            required: true
+            enable: true
+          connectiontimeout: 6000
+          timeout: 6000
+          writetimeout: 6000
+    protocol: smtp
+    test-connection: false
+server:
+  port: 4000
